@@ -1,6 +1,9 @@
 element First{
+  DebugUtils du;
+  EventWindow ew;
+
   Void behave(){
-    EventWindow ew;
+    du.print(ew[1]);
     ew[1]=ew[0];
   }
 }
